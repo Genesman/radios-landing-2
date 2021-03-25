@@ -475,8 +475,14 @@ header {
             display: block;
             background-image: url(../img/play-icon.svg);
             background-size: cover;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
             width: 30px;
             height: 33px;
+            &:focus {
+                outline: none;
+            }
         }
         img {
             vertical-align: bottom;
@@ -510,25 +516,25 @@ header {
             // Range Handle
             &::-webkit-slider-thumb {
                 appearance: none;
-                width: 20px;
-                height: 20px;
+                width: 15px;
+                height: 15px;
                 border-radius: 50%;
                 background: $light-color;
                 cursor: pointer;
                 transition: background .15s ease-in-out;
 
                 &:hover {
-                    background: $primary-color;
+                    background: #002EB8;
                 }
             }
 
             &:active::-webkit-slider-thumb {
-                background: $primary-color;
+                background: #002EB8;
             }
 
             &::-moz-range-thumb {
-                width: 20px;
-                height: 20px;
+                width: 15px;
+                height: 15px;
                 border: 0;
                 border-radius: 50%;
                 background: $primary-color;

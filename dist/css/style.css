@@ -393,8 +393,13 @@ header {
       display: block;
       background-image: url(../img/play-icon.svg);
       background-size: cover;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
       width: 30px;
       height: 33px; }
+      .player-bar .play #play-btn:focus {
+        outline: none; }
     .player-bar .play img {
       vertical-align: bottom; }
   .player-bar__track {
@@ -422,20 +427,20 @@ header {
       .player-bar .volume input[type="range"]::-webkit-slider-thumb {
         -webkit-appearance: none;
                 appearance: none;
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         border-radius: 50%;
         background: #ffffff;
         cursor: pointer;
         -webkit-transition: background .15s ease-in-out;
         transition: background .15s ease-in-out; }
         .player-bar .volume input[type="range"]::-webkit-slider-thumb:hover {
-          background: #A714BC; }
+          background: #002EB8; }
       .player-bar .volume input[type="range"]:active::-webkit-slider-thumb {
-        background: #A714BC; }
+        background: #002EB8; }
       .player-bar .volume input[type="range"]::-moz-range-thumb {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         border: 0;
         border-radius: 50%;
         background: #A714BC;
